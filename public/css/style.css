@@ -602,6 +602,10 @@ video {
   left: 0px;
 }
 
+.left-12 {
+  left: 3rem;
+}
+
 .left-44 {
   left: 11rem;
 }

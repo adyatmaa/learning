@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scroll Animation</title>
+    <link rel="stylesheet" href="css/style.css">
+
+    <style>
+        /* .none {
+            opacity: 0;
+            transform: translateX(-100%);
+        }
+
+        .show {
+            opacity: 1;
+            transform: translateX(0);
+            transition: opacity 1.8s ease-out, transform 1s ease-out;
+        } */
+
+        .none {
+            opacity: 0;
+            filter: blur(5px);
+            transform: translateX(-100%);
+            transition: all 1.8s;
+        }
+
+        .show {
+            opacity: 1;
+            filter: blur(0);
+            transform: translateX(0);
+        }
+    </style>
+</head>
+
+<body class="bg-gray-100">
+    <section class="h-screen flex items-center justify-center bg-blue-200">
+        <h1 class="text-3xl font-bold none">Section 1</h1>
+    </section>
+    <section id="section2" class="h-screen flex items-center justify-center bg-green-200">
+        <h1 class="text-3xl font-bold none">Section 2</h1>
+    </section>
+    <section id="section3" class="h-screen flex items-center justify-center bg-red-200">
+        <h1 class="text-3xl font-bold none">Section 3</h1>
+    </section>
+    <section>
+        <div class="mx-auto mt-16 absolute">
+            <!-- <div class="mx-auto mt-16 lg:w-[75%]"> -->
+            <h1 class="text-3xl lg:text-5xl lg:text-center font-medium mb-1 lg:mb-5 none">Kami memberikan <span
+                    class="bg-[#de3a3a] text-white px-1 rounded-xl">solusi</span> untuk</h1>
+            <h1 class="text-3xl lg:text-5xl lg:text-center font-medium none">mengatasi pengiriman barang
+                Anda.</span>
+            </h1>
+            <p
+                class="text-sm lg:text-lg lg:text-center w-[86%] lg:mx-auto lg:mt-8 mt-4 font-medium text-[#787878] none">
+                Solusi terbaik
+                pengiriman barang anda biar kami yang atasi. Tinggal sat set wat wet barang pun sampai tujuan.
+                Tidak perlu ribet cukup klak klik aja bolo👍</p>
+            <p class="font-medium lg:text-5xl capitalize none">
+                Introduce your product
+            </p>
+        </div>
+    </section>
+    <script src="./js/app2.js"></script>
+</body>
+
+</html>

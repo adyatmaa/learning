@@ -1,0 +1,283 @@
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>SmartSchooler | Make a Smart Environment</title>
+</head>
+
+<body>
+    <!-- Header -->
+    <nav class="bg-transparent fixed w-full z-10 top-0 start-0 backdrop-blur-sm">
+        <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+            <div class="lg:w-1/3 lg:order-2">
+                <a href="#" class="flex items-center justify-center space-x-3 rtl:space-x-reverse">
+                    <span class="self-center text-2xl font-semibold whitespace-nowrap">SmartSchooler</span>
+                </a>
+            </div>
+            <div class="flex space-x-3 lg:space-x-0 lg:w-1/3 justify-end lg:order-3">
+                <button type="button"
+                    class="text-white border-2 border-[#111B47] bg-[#111B47] hover:bg-white hover:text-[#111B47] hover:border-2 hover:border-[#111B47] focus:ring-4 focus:outline-none focus:ring-[#3655DF] font-medium rounded text-sm px-4 py-2 text-center duration-300">
+                    Buy Now
+                </button>
+                <button id="menu-toggle" data-collapse-toggle="navbar-sticky" type="button"
+                    class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg lg:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200"
+                    aria-controls="navbar-sticky" aria-expanded="false">
+                    <span class="sr-only">Open</span>
+                    <svg class="w-5 h-5" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" viewBox="0 0 24 24"
+                        fill="currentColor">
+                        <path d="M3 4H21V6H3V4ZM3 11H21V13H3V11ZM3 18H21V20H3V18Z"></path>
+                    </svg>
+                </button>
+            </div>
+            <div class="hidden lg:flex w-full lg:w-1/3 lg:order-1" id="navbar-sticky">
+                <ul
+                    class="flex flex-col p-4 lg:p-0 font-medium border border-gray-100 rounded-lg bg-gray-50 lg:space-x-12 lg:flex-row lg:mt-0 lg:border-0 lg:bg-transparent">
+                    <li>
+                        <a href="#hero"
+                            class="block py-2 px-3 text-white bg-[#111B47] rounded lg:bg-transparent lg:text-[#111B47] lg:p-0"
+                            aria-current="page">
+                            Home
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#article"
+                            class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 lg:hover:bg-transparent lg:p-0 ">
+                            Articles
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#pricing"
+                            class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 lg:hover:bg-transparent lg:p-0 ">
+                            Pricing
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Content -->
+    <!-- Hero -->
+    <section id="hero" class="">
+        <div class="relative w-full h-screen overflow-x-clip">
+            <div class="absolute lg:start-[572px] start-20 w-full lg:w-full lg:h-full none-right">
+                <img class="h-full scale-125" src="assets/img/hero.svg" alt="">
+            </div>
+            <div class="absolute lg:w-[640px] lg:top-[240px] top-32 lg:left-[160px]">
+                <div class="flex flex-col gap-y-4 lg:mb-12 mb-24 lg:mx-auto mx-12">
+                    <p class="font-medium lg:text-5xl text-4xl  none">
+                        <!-- Introduce your product -->
+                        Let's Make a Smart
+                        Environment
+                    </p>
+                    <p class="font-medium lg:text-5xl text-4xl capitalize none">
+                        <!-- quickly & effectively -->
+                    </p>
+                </div>
+                <div class="flex flex-col gap-y-4 text-pretty mb-24 text-[6F7CB2] lg:mx-auto mx-12">
+                    <p class="lg:text-lg text-base font-normal none">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Quis molestiae dolor earum iure perspiciatis expedita, neque iusto deserunt nisi fugiat
+                        voluptatum doloremque illum tempora odit optio nulla eaque culpa, laborum minus totam.
+                    </p>
+                    <p class="lg:text-lg text-base font-normal none">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam commodi necessitatibus, veritatis
+                        dolorem asperiores autem natus debitis aperiam itaque in?
+                    </p>
+                </div>
+                <div class="flex lg:flex-row flex-col lg:gap-x-8 gap-y-4 lg:w-auto w-52 mx-auto none">
+                    <button type="button"
+                        class="bg-[#111B47] z-50 text-white py-1 px-12 rounded border-2 border-[#111B47] hover:bg-white hover:border-2 hover:border-[#111B47] hover:text-[#111B47] hover:scale-105 duration-300">
+                        Purchase Setup Kit
+                    </button>
+                    <button type="button"
+                        class="bg-white z-50 border-2 border-[#111B47] py-1 px-12 rounded text-[#111B47] hover:bg-[#111B47] hover:text-white hover:scale-105 duration-300">
+                        Learn More
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Section 2 -->
+    <section id="article" class="">
+        <div class="relative w-full h-screen">
+            <div class="absolute lg:top-40 top-0 lg:end-28 end-0 bottom-0 none-right">
+                <img class="h-full w-full" src="assets/img/undraw.svg" alt="">
+            </div>
+            <div class="absolute lg:start-[160px] lg:top-[200px] top-12 lg:w-[560px] lg:mx-auto mx-12">
+                <div class="flex flex-col lg:gap-y-8 gap-y-4 lg:mb-20 mb-12">
+                    <p class="lg:text-4xl text-3xl font-semibold none">Light, Fast & Powerful</p>
+                    <p class="text-[#6F7CB2] text-pretty lg:text-lg text-base none">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus sequi esse obcaecati
+                        sapiente provident recusandae soluta pariatur cumque unde. Nulla?
+                    </p>
+                    <p class="text-[#6F7CB2] text-pretty lg:text-lg text-base none">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, unde!
+                        consectetur adipisicing elit. Eius quae
+                    </p>
+                </div>
+                <div class="flex flex-row gap-x-8">
+                    <div class="flex flex-col items-start gap-y-4">
+                        <img class="h-10 none" src="assets/img/icon_undraw.svg" alt="">
+                        <p class="font-semibold lg:text-xl text-lg none">Title Goes Here</p>
+                        <p class="lg:text-base text-sm none">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                        </p>
+                    </div>
+                    <div class="flex flex-col items-start gap-y-4">
+                        <img class="h-10 none" src="assets/img/icon_undraw.svg" alt="">
+                        <p class="font-semibold lg:text-xl text-lg none">Title Goes Here</p>
+                        <p class="lg:text-base text-sm none">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Section 3 -->
+    <section class="">
+        <div class="relative w-full h-screen overflow-hidden">
+            <div class="absolute lg:top-52 top-32 lg:start-28 none">
+                <img class="w-full" src="assets/img/news.svg" alt="">
+            </div>
+            <div class="absolute lg:top-52 top-[480px] lg:end-28 lg:w-[420px] lg:mx-auto mx-12 flex flex-col gap-y-8">
+                <p class="lg:text-4xl text-3xl font-semibold none-right">Light, Fast & Powerful</p>
+                <p class="text-[6F7CB2] text-pretty lg:text-lg text-base none-right">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt explicabo alias reiciendis eius ab
+                    ea, modi, quasi quo beatae tempore, eum nihil quibusdam dolorum eos aliquid aliquam animi. Velit,
+                    voluptatum!
+                </p>
+                <p class="text-[6F7CB2] text-pretty lg:text-lg text-base none-right">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum laborum officia commodi.
+                </p>
+            </div>
+        </div>
+    </section>
+    <!-- Section 4 -->
+    <section class="">
+        <div class="relative w-full h-screen">
+            <div class="absolute lg:w-[620px] lg:start-28 lg:top-52 top-24 none">
+                <img class="w-full" src="assets/img/social.svg" alt="">
+            </div>
+            <div class="absolute lg:end-28 lg:w-[420px] lg:top-52 top-[440px] flex flex-col gap-y-8 lg:mx-auto mx-12">
+                <p class="lg:text-4xl text-3xl font-semibold none-right">Light, Fast & Powerful</p>
+                <p class="text-[6F7CB2] text-pretty lg:text-lg text-base none-right">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt explicabo alias reiciendis eius ab
+                    ea, modi, quasi quo beatae tempore, eum nihil quibusdam dolorum eos aliquid aliquam animi. Velit,
+                    voluptatum!
+                </p>
+                <p class="text-[6F7CB2] text-pretty lg:text-lg text-base none-right">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum laborum officia commodi.
+                </p>
+            </div>
+        </div>
+    </section>
+    <!-- Section 5 -->
+    <section class="">
+        <div class="relative w-full h-screen">
+            <div class="absolute lg:w-[620px] lg:start-28 lg:top-52 top-24 none">
+                <img class="w-full" src="assets/img/mention.svg" alt="">
+            </div>
+            <div class="absolute lg:end-28 lg:w-[420px] lg:top-52 top-[440px] flex flex-col gap-y-8 lg:mx-auto mx-12">
+                <p class="lg:text-4xl text-3xl font-semibold none-right">Light, Fast & Powerful</p>
+                <p class="text-[#6F7CB2] text-pretty lg:text-lg text-base none-right">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt explicabo alias reiciendis eius ab
+                    ea, modi, quasi quo beatae tempore, eum nihil quibusdam dolorum eos aliquid aliquam animi. Velit,
+                    voluptatum!
+                </p>
+                <p class="text-[#6F7CB2] text-pretty lg:text-lg text-base none-right">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum laborum officia commodi.
+                </p>
+                <button
+                    class="bg-[#111B47] z-50 text-white none-right py-1 px-12 rounded border-2 border-[#111B47] hover:bg-white hover:border-2 hover:border-[#111B47] hover:text-[#111B47] hover:scale-105 duration-300 w-52">Purchase
+                    Now</button>
+            </div>
+        </div>
+    </section>
+    <!-- Section 6 -->
+    <section id="pricing" class="">
+        <div class="relative w-full h-screen overflow-x-clip">
+            <div class="absolute lg:top-2 top-52">
+                <img class="lg:h-full scale-[1.8]" src="assets/img/Rectangle.svg" alt="">
+            </div>
+            <div class="absolute lg:mx-72 lg:top-12 top-20 flex flex-col gap-y-16">
+                <div class="flex flex-col gap-y-8 text-center mx-12 none">
+                    <p class="text-4xl font-semibold">
+                        A Price To Suit Everyone
+                    </p>
+                    <p class="text-[#6F7CB2] text-pretty text-lg">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt explicabo alias reiciendis
+                        eius ab
+                        ea, modi, quasi quo beatae tempore, eum nihil quibusdam dolorum eos aliquid aliquam animi.
+                        Velit,
+                        voluptatum!
+                    </p>
+                </div>
+                <div class="text-center text-[#222F65] flex flex-col gap-y-4 none">
+                    <p class="text-5xl font-semibold">
+                        $40
+                    </p>
+                    <p class="text-lg">
+                        Setup Kit
+                    </p>
+                </div>
+                <div class="items-center flex flex-col gap-y-4 none">
+                    <p class="text-slate-500 text-sm">
+                        See, One price. Simple.
+                    </p>
+                    <button
+                        class="bg-[#111B47] z-50 text-white py-1 px-12 rounded border-2 border-[#111B47] hover:bg-transparent hover:border-2 hover:border-[#111B47] hover:text-[#111B47] hover:scale-105 duration-300 w-52">
+                        Purchase Now
+                    </button>
+                </div>
+            </div>
+            <!-- Footer -->
+            <div class="bg-[E7ECFF] h-44 bottom-0 absolute w-full z-10">
+                <div
+                    class="flex lg:flex-row flex-col gap-y-4 text-center lg:justify-between lg:mx-20 lg:mb-0 mb-8 lg:py-8 py-2 border-b-2 border-slate-300">
+                    <div class="flex flex-row items-center justify-center text-sm text-slate-500">
+                        <p class="text-base">
+                            Copyright
+                        </p>
+                        <svg class="h-4 mx-1" xmlns="http://www.w3.org/2000/svg" fill="#64748b" viewBox="0 0 24 24">
+                            <path
+                                d="M16.2877 9.42773C15.413 7.97351 13.8195 7 12 7 9.23999 7 7 9.23999 7 12 7 14.76 9.23999 17 12 17 13.8195 17 15.413 16.0265 16.2877 14.5723L14.5729 13.5442C14.0483 14.4166 13.0927 15 12 15 10.3425 15 9 13.6575 9 12 9 10.3425 10.3425 9 12 9 13.093 9 14.0491 9.58386 14.5735 10.4568L16.2877 9.42773ZM22 12C22 6.47998 17.52 2 12 2 6.47998 2 2 6.47998 2 12 2 17.52 6.47998 22 12 22 17.52 22 22 17.52 22 12ZM4 12C4 7.57996 7.57996 4 12 4 16.42 4 20 7.57996 20 12 20 16.42 16.42 20 12 20 7.57996 20 4 16.42 4 12Z">
+                            </path>
+                        </svg>
+                        <p class="text-base">
+                            2024 SmartSchooler
+                        </p>
+                    </div>
+                    <p class="text-center text-2xl font-semibold whitespace-nowrap">
+                        SmartSchooler
+                    </p>
+                    <button
+                        class="lg:flex hidden bg-[#111B47] z-50 text-white py-1 px-12 rounded border-2 border-[#111B47] hover:bg-transparent hover:border-2 hover:border-[#111B47] hover:text-[#111B47] hover:scale-105 duration-300 w-52">
+                        Purchase Now
+                    </button>
+                </div>
+                <div class="flex lg:flex-row flex-col gap-y-4 lg:mx-20 justify-between items-center lg:py-4">
+                    <div class="lg:flex hidden flex-row gap-x-12 text-sm text-slate-500">
+                        <p>Home</p>
+                        <p>About</p>
+                        <p>Contact</p>
+                    </div>
+                    <div class="flex flex-row gap-x-4 items-center justify-between lg:px-0 px-12 lg:w-auto w-full">
+                        <a href="">
+                            <img class="h-8" src="assets/icon/fb.svg" alt="">
+                        </a>
+                        <img class="h-8" src="assets/icon/linkedin.svg" alt="">
+                        <img class="h-8" src="assets/icon/tw.svg" alt="">
+                        <img class="h-8" src="assets/icon/yt.svg" alt="">
+                        <img class="h-8" src="assets/icon/Instagram.svg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+<script src="./js/app.js"></script>
+
+</html>

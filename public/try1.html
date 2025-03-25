@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Carousel Example</title>
+  <link rel="stylesheet" href="css/style.css">
+
+  <style>
+    .carousel-item {
+      min-width: 100%;
+      transition: transform 0.5s ease;
+    }
+  </style>
+</head>
+
+<body>
+  <div class=" relative overflow-hidden w-full">
+    <div class=" flex">
+      <!-- Slide 1 -->
+      <div class="carousel-item flex-shrink-0 w-full h-64 bg-blue-500 flex items-center justify-center text-white">
+        <img src="https://via.placeholder.com/150" alt="Image 1" class="h-32 w-32">
+        <button class="ml-4 px-4 py-2 bg-white text-blue-500 rounded" onclick="buttonAction(1)">Button 1</button>
+      </div>
+      <!-- Slide 2 -->
+      <div class="carousel-item flex-shrink-0 w-full h-64 bg-red-500 flex items-center justify-center text-white">
+        <img src="https://via.placeholder.com/150" alt="Image 2" class="h-32 w-32">
+        <button class="ml-4 px-4 py-2 bg-white text-red-500 rounded" onclick="buttonAction(2)">Button 2</button>
+      </div>
+      <!-- Slide 3 -->
+      <div class="carousel-item flex-shrink-0 w-full h-64 bg-green-500 flex items-center justify-center text-white">
+        <img src="https://via.placeholder.com/150" alt="Image 3" class="h-32 w-32">
+        <button class="ml-4 px-4 py-2 bg-white text-green-500 rounded" onclick="buttonAction(3)">Button 3</button>
+      </div>
+    </div>
+    <button onclick="prevSlide()"
+      class="absolute top-1/2 left-0 transform -translate-y-1/2 px-4 py-2 bg-white text-black rounded">Prev</button>
+    <button onclick="nextSlide()"
+      class="absolute top-1/2 right-0 transform -translate-y-1/2 px-4 py-2 bg-white text-black rounded">Next</button>
+  </div>
+
+  <script>
+    let currentIndex = 0;
+
+    function showSlide(index) {
+      const slides = document.querySelectorAll('.carousel-item');
+      const totalSlides = slides.length;
+      if (index >= totalSlides) {
+        currentIndex = 0;
+      } else if (index < 0) {
+        currentIndex = totalSlides - 1;
+      } else {
+        currentIndex = index;
+      }
+      const offset = -currentIndex * 100;
+      slides.forEach(slide => {
+        slide.style.transform = `translateX(${offset}%)`;
+      });
+    }
+
+    function nextSlide() {
+      showSlide(currentIndex + 1);
+    }
+
+    function prevSlide() {
+      showSlide(currentIndex - 1);
+    }
+
+    function buttonAction(index) {
+      alert(`Button ${index} clicked!`);
+    }
+
+    document.addEventListener('DOMContentLoaded', () => {
+      showSlide(currentIndex);
+    });
+  </script>
+</body>
+
+</html>

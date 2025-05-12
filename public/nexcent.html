@@ -1,4 +1,4 @@
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 
 <head>
     <meta charset="UTF-8">
@@ -9,6 +9,7 @@
 </head>
 
 <body>
+    <!-- Header -->
     <nav class="bg-transparent h-20 fixed w-full z-10 top-0 start-0 backdrop-blur-sm">
         <div class="flex flex-wrap items-center justify-between lg:mx-20 p-4">
             <div class="lg:w-3/12 lg:order-1">
@@ -47,31 +48,31 @@
                         </a>
                     </li>
                     <li>
-                        <a href=""
+                        <a href="#service"
                             class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 lg:hover:bg-transparent lg:p-0 ">
                             Service
                         </a>
                     </li>
                     <li>
-                        <a href=""
+                        <a href="#feature"
                             class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 lg:hover:bg-transparent lg:p-0 ">
                             Feature
                         </a>
                     </li>
                     <li>
-                        <a href=""
+                        <a href="#product"
                             class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 lg:hover:bg-transparent lg:p-0 ">
                             Product
                         </a>
                     </li>
                     <li>
-                        <a href=""
+                        <a href="#testimonial"
                             class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 lg:hover:bg-transparent lg:p-0 ">
                             Testimonial
                         </a>
                     </li>
                     <li>
-                        <a href=""
+                        <a href="#faq"
                             class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 lg:hover:bg-transparent lg:p-0 ">
                             FAQ
                         </a>
@@ -81,29 +82,60 @@
         </div>
     </nav>
     <!--Content-->
-    <section>
-        <div class="mt-20 lg:py-20 lg:px-32 w-full bg-[#F5F7FA] flex flex-row justify-between">
-            <img class="lg:order-2 h-[400px]" src="./assets/img/Illustration.svg" alt="">
-            <div class="flex flex-col gap-y-8 lg:mt-16">
-                <div class="flex flex-col gap-y-2">
-                    <p class="text-[#4D4D4D] lg:text-7xl lg:font-semibold">
-                        Lesson and insights
-                    </p>
-                    <p class="text-[#4CAF4F] lg:text-7xl lg:font-semibold">
-                        from 8 years
-                    </p>
+    <section id="hero" class="relative overflow-hidden">
+        <!-- Carousel -->
+        <div id="carousel" class="flex transition-transform duration-500 ease-in-out w-full">
+            <!-- Slide 1 -->
+            <div class="min-w-full mt-20 lg:py-20 lg:px-32 w-full bg-[#F5F7FA] flex flex-row justify-between">
+                <img class="lg:order-2 h-[400px]" src="./assets/img/Illustration.svg" alt="">
+                <div class="flex flex-col gap-y-8 lg:mt-16">
+                    <div class="flex flex-col gap-y-2">
+                        <p class="text-[#4D4D4D] lg:text-7xl lg:font-semibold">Lesson and insights</p>
+                        <p class="text-[#4CAF4F] lg:text-7xl lg:font-semibold">from 8 years</p>
+                    </div>
+                    <p class="text-[#717171] lg:text-lg">Where to grow your bussiness as a photographer: site or social
+                        media?</p>
+                    <button type="button" onclick="alert('button slide 1')"
+                        class="bg-[#4CAF4F] text-white w-32 py-4 rounded text-lg">Register</button>
                 </div>
-                <p class="text-[#717171] lg:text-lg">
-                    Where to grow your bussiness as a photographer: site or social media?
-                </p>
-                <button class="bg-[#4CAF4F] text-white w-32 py-4 rounded text-lg">
-                    Register
-                </button>
             </div>
+            <!-- Slide 2 (On Working) -->
+            <div class="min-w-full mt-20 lg:py-20 lg:px-32 w-full bg-[#EEF7FA] flex flex-row justify-between">
+                <img class="lg:order-2 h-[400px]" src="./assets/img/Illustration.svg" alt="">
+                <div class="flex flex-col gap-y-8 lg:mt-16">
+                    <div class="flex flex-col gap-y-2">
+                        <p class="text-[#4D4D4D] lg:text-7xl lg:font-semibold">Another Insight2</p>
+                        <p class="text-[#4CAF4F] lg:text-7xl lg:font-semibold">for you</p>
+                    </div>
+                    <p class="text-[#717171] lg:text-lg">Boost your business with better insights.</p>
+                    <button type="button" onclick="alert('button slide 2')"
+                        class="bg-[#4CAF4F] text-white w-32 py-4 rounded text-lg">Learn More</button>
+                </div>
+            </div>
+            <!-- Slide 3 (On working as well) -->
+            <div class="min-w-full mt-20 lg:py-20 lg:px-32 w-full bg-[#EEF7FA] flex flex-row justify-between">
+                <img class="lg:order-2 h-[400px]" src="./assets/img/Illustration.svg" alt="">
+                <div class="flex flex-col gap-y-8 lg:mt-16">
+                    <div class="flex flex-col gap-y-2">
+                        <p class="text-[#4D4D4D] lg:text-7xl lg:font-semibold">Another Insight Again 3</p>
+                        <p class="text-[#4CAF4F] lg:text-7xl lg:font-semibold">for you</p>
+                    </div>
+                    <p class="text-[#717171] lg:text-lg">Boost your business with better insights.</p>
+                    <button type="button" onclick="alert('button slide 3')"
+                        class="bg-[#4CAF4F] text-white w-32 py-4 rounded text-lg">Learn More Really Mooree</button>
+                </div>
+            </div>
+
+        </div>
+        <!-- Navigation -->
+        <div class="absolute bottom-5 left-1/2 -translate-x-1/2 flex gap-4">
+            <button type="button" class="w-3 h-3 bg-gray-400 rounded-full nav-car" data-slide="0"></button>
+            <button type="button" class="w-3 h-3 bg-gray-400 rounded-full nav-car" data-slide="1"></button>
+            <button type="button" class="w-3 h-3 bg-gray-400 rounded-full nav-car" data-slide="2"></button>
         </div>
     </section>
-    <!--  -->
-    <section>
+    <!-- Client -->
+    <section id="service">
         <div class="flex flex-col gap-y-16 my-20">
             <div class="flex flex-col gap-y-6 place-items-center">
                 <div class="flex flex-col gap-y-4 place-items-center">
@@ -181,8 +213,8 @@
             </div>
         </div>
     </section>
-    <!--  -->
-    <section>
+    <!-- Feature -->
+    <section id="feature">
         <div class="mt-20 lg:py-20 lg:px-32 w-full flex flex-row gap-x-12 justify-between">
             <img class="lg:order-1 lg:w-[420px]" src="./assets/img/unlock.svg" alt="">
             <div class="flex flex-col gap-y-8 lg:order-2">
@@ -267,8 +299,8 @@
             </div>
         </div>
     </section>
-    <!--  -->
-    <section>
+    <!-- Product -->
+    <section id="product">
         <div class="mt-20 lg:py-20 lg:px-32 w-full flex flex-row gap-x-12 justify-between">
             <img class="lg:order-1 lg:w-[420px]" src="./assets/img/calendar-pana.svg" alt="">
             <div class="flex flex-col gap-y-8 lg:order-2">
@@ -289,8 +321,8 @@
             </div>
         </div>
     </section>
-    <!--  -->
-    <section>
+    <!-- Testimonial -->
+    <section id="testimonial">
         <div class="bg-[#F5F7FA] flex flex-row justify-between gap-x-16 px-32 py-4">
             <img class="w-96" src="./assets/img/tesla.svg" alt="">
             <div class="flex flex-col gap-y-8">
@@ -326,8 +358,8 @@
             </div>
         </div>
     </section>
-    <!--  -->
-    <section>
+    <!-- FAQ -->
+    <section id="faq">
         <div class="flex flex-col gap-y-4 items-center py-12">
             <p class="text-[#4D4D4D] lg:text-4xl font-semibold">
                 Caring is the new marketing
@@ -485,6 +517,7 @@
             </div>
         </div>
     </footer>
+    <script src="js/carousel.js"></script>
 </body>
 
 </html>
